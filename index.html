@@ -3,66 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Электрик Роман в Барнауле — Выезд на дом и электромонтаж</title>
+  <title>Услуги электрика в Барнауле — Вызов электрика на дом | Мастер Роман</title>
+  <meta name="description" content="Услуги частного электрика в Барнауле без посредников. Срочный вызов электрика на дом, замена электропроводки, сборка щитов, установка розеток и люстр. Гарантия качества. Тел: +7 (913) 369-79-49.">
+  <meta name="keywords" content="услуги электрика Барнаул, вызов электрика на дом Барнаул, частный электрик Барнаул, электромонтажные работы Барнаул, замена проводки в квартире Барнаул, аварийный электрик Барнаул, сборка электрощита, установка розеток">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="RU-ALT">
+  <meta name="geo.placename" content="Барнаул">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Частный электрик Роман — Услуги электрика в Барнауле">
+  <meta property="og:description" content="Оперативный выезд на дом во все районы Барнаула. Честные цены без посредников, гарантия на работы. Звоните: +7 (913) 369-79-49.">
+  <meta property="og:image" content="photo.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Частный электрик Роман — Барнаул",
+    "image": "photo.jpg",
+    "telephone": "+7-913-369-79-49",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Барнаул",
+      "addressRegion": "Алтайский край",
+      "addressCountry": "RU"
+    },
+    "areaServed": "Барнаул",
+    "openingHours": "Mo-Su 08:00-21:00",
+    "priceRange": "₽"
+  }
+  </script>
+
   <style>
+    :root { --bg-dark: #0b1120; --bg-card: #ffffff; --primary: #1e3a8a; --accent: #f59e0b; --accent-hover: #d97706; --text-main: #1e293b; --text-muted: #64748b; --border: #e2e8f0; }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
-    body { background-color: #f4f6f8; color: #1e293b; line-height: 1.6; }
-    header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; padding: 50px 20px; text-align: center; }
-    .avatar { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #f59e0b; margin: 0 auto 20px; display: block; background-color: #334155; }
-    header h1 { font-size: 2.2rem; margin-bottom: 12px; }
-    header p { font-size: 1.1rem; color: #cbd5e1; max-width: 600px; margin: 0 auto 28px; }
-    .btn { display: inline-block; background-color: #f59e0b; color: #0f172a; font-weight: 700; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 1.05rem; transition: background 0.2s; }
-    .btn:hover { background-color: #d97706; }
-    .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
-    h2 { text-align: center; font-size: 1.7rem; margin-bottom: 28px; color: #0f172a; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 40px; }
-    .card { background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); display: flex; flex-direction: column; justify-content: space-between; }
-    .card h3 { font-size: 1.2rem; margin-bottom: 10px; color: #1e3a8a; }
+    html { scroll-behavior: smooth; }
+    body { background-color: #f1f5f9; color: var(--text-main); line-height: 1.6; padding-bottom: 60px; }
+    nav { background: rgba(11, 17, 32, 0.95); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .nav-inner { max-width: 1040px; margin: 0 auto; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { color: #fff; font-weight: 800; font-size: 1.1rem; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 20px; }
+    .nav-links a { color: #cbd5e1; text-decoration: none; font-size: 0.92rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    @media (max-width: 680px) { .nav-links { display: none; } }
+    header { background: radial-gradient(circle at top right, #1e3a8a, #0b1120 70%); color: #fff; padding: 60px 20px 70px; text-align: center; }
+    .badge { display: inline-block; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #fbbf24; padding: 6px 16px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; margin-bottom: 20px; }
+    .avatar-wrap { position: relative; width: 156px; height: 156px; margin: 0 auto 22px; }
+    .avatar { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent); box-shadow: 0 10px 25px rgba(0,0,0,0.4); background-color: #1e293b; }
+    .status-dot { position: absolute; bottom: 8px; right: 8px; width: 22px; height: 22px; background: #22c55e; border: 3px solid #0b1120; border-radius: 50%; }
+    header h1 { font-size: 2.4rem; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.02em; }
+    header p { font-size: 1.12rem; color: #cbd5e1; max-width: 640px; margin: 0 auto 30px; }
+    .hero-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--accent); color: #0b1120; font-weight: 700; text-decoration: none; padding: 15px 30px; border-radius: 10px; font-size: 1.05rem; transition: transform 0.2s, background 0.2s; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35); }
+    .btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
+    .btn-ghost { display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); color: #fff; font-weight: 600; text-decoration: none; padding: 15px 26px; border-radius: 10px; font-size: 1.02rem; transition: background 0.2s; }
+    .btn-ghost:hover { background: rgba(255,255,255,0.16); }
+    .container { max-width: 1040px; margin: 0 auto; padding: 50px 20px; }
+    .section-title { text-align: center; margin-bottom: 36px; }
+    .section-title h2 { font-size: 1.9rem; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
+    .section-title p { color: var(--text-muted); font-size: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; margin-bottom: 60px; }
+    .card { background: var(--bg-card); padding: 28px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08); border-color: #cbd5e1; }
+    .card-icon { width: 46px; height: 46px; background: #eff6ff; color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 16px; }
+    .card h3 { font-size: 1.22rem; margin-bottom: 10px; color: #0f172a; }
     .card p { font-size: 0.95rem; color: #475569; }
-    .price { display: inline-block; margin-top: 14px; font-weight: 700; color: #0f172a; font-size: 1.05rem; }
-    .box { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); margin-bottom: 40px; }
+    .card-footer { margin-top: 18px; padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; }
+    .price { font-weight: 800; color: var(--primary); font-size: 1.1rem; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px; margin-bottom: 60px; }
+    .step { background: #fff; padding: 24px; border-radius: 14px; border: 1px solid var(--border); position: relative; }
+    .step-num { width: 34px; height: 34px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-bottom: 14px; }
+    .step h4 { font-size: 1.08rem; margin-bottom: 8px; color: #0f172a; }
+    .step p { font-size: 0.9rem; color: var(--text-muted); }
+    .box { background: #fff; padding: 32px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04); margin-bottom: 60px; overflow-x: auto; }
     .price-table { width: 100%; border-collapse: collapse; }
-    .price-table th, .price-table td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 0.96rem; }
-    .price-table th { color: #1e3a8a; font-weight: 700; background-color: #f8fafc; }
-    .price-table td:last-child, .price-table th:last-child { text-align: right; font-weight: 600; white-space: nowrap; }
-    .price-note { margin-top: 14px; font-size: 0.85rem; color: #64748b; }
-    .benefits ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .benefits li::before { content: "⚡ "; }
-    .contacts { text-align: center; background: #0f172a; color: #fff; padding: 40px 20px; border-radius: 12px; }
-    .contacts h2 { color: #fff; margin-bottom: 12px; }
-    .contacts p { color: #cbd5e1; margin-bottom: 24px; }
-    .contact-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
-    .btn-outline { display: inline-block; border: 2px solid #f59e0b; color: #f59e0b; font-weight: 600; text-decoration: none; padding: 12px 24px; border-radius: 8px; }
-    .btn-outline:hover { background: #f59e0b; color: #0f172a; }
-    footer { text-align: center; padding: 20px; font-size: 0.85rem; color: #64748b; }
+    .price-table th, .price-table td { padding: 14px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 0.96rem; }
+    .price-table th { color: var(--primary); font-weight: 700; background-color: #f8fafc; }
+    .price-table tr:hover td { background-color: #f8fafc; }
+    .price-table td:last-child, .price-table th:last-child { text-align: right; font-weight: 700; white-space: nowrap; color: #0f172a; }
+    .price-note { margin-top: 16px; font-size: 0.85rem; color: var(--text-muted); }
+    .faq-list { max-width: 800px; margin: 0 auto 60px; display: flex; flex-direction: column; gap: 12px; }
+    details { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 18px 22px; }
+    summary { font-weight: 700; font-size: 1.02rem; cursor: pointer; color: #0f172a; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    summary::after { content: "+"; font-size: 1.4rem; color: var(--primary); font-weight: 400; }
+    details[open] summary::after { content: "−"; }
+    details p { margin-top: 12px; font-size: 0.95rem; color: #475569; }
+    .contacts { text-align: center; background: radial-gradient(circle at bottom left, #1e3a8a, #0b1120 75%); color: #fff; padding: 50px 24px; border-radius: 20px; box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15); }
+    .contacts h2 { color: #fff; font-size: 1.9rem; margin-bottom: 12px; }
+    .contacts p { color: #cbd5e1; margin-bottom: 28px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .contact-links { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn-outline { display: inline-flex; align-items: center; border: 2px solid var(--accent); color: var(--accent); font-weight: 700; text-decoration: none; padding: 13px 26px; border-radius: 10px; transition: all 0.2s; }
+    .btn-outline:hover { background: var(--accent); color: #0b1120; }
+    footer { text-align: center; padding: 28px 20px; font-size: 0.88rem; color: var(--text-muted); }
+    .mobile-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #0b1120; padding: 10px 16px; border-top: 1px solid rgba(255,255,255,0.12); z-index: 99; gap: 10px; }
+    .mobile-bar a { flex: 1; text-align: center; padding: 12px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 0.95rem; }
+    .m-call { background: var(--accent); color: #0b1120; }
+    .m-tg { background: #1e3a8a; color: #fff; }
+    @media (max-width: 680px) { header h1 { font-size: 1.85rem; } .mobile-bar { display: flex; } }
   </style>
 </head>
 <body>
 
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo">⚡ Электрик <span>Роман</span></a>
+      <div class="nav-links">
+        <a href="#services">Услуги</a>
+        <a href="#steps">Как работаем</a>
+        <a href="#price">Прайс-лист</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
   <header>
-    <img src="photo.jpg" alt="Электрик Роман — Барнаул" class="avatar">
-    <h1>Частный электрик Роман — Барнаул</h1>
-    <p>Оперативный выезд по всем районам города и пригороду. Аккуратный монтаж, поиск неисправностей и гарантия на все виды работ.</p>
-    <a href="tel:+79133697949" class="btn">Позвонить: +7 (913) 369-79-49</a>
+    <div class="badge">📍 Барнаул и пригород • Ежедневно с 08:00 до 21:00</div>
+    <div class="avatar-wrap">
+      <img src="photo.jpg" alt="Услуги электрика в Барнауле — мастер Роман" class="avatar">
+      <div class="status-dot"></div>
+    </div>
+    <h1>Услуги электрика в Барнауле — мастер Роман</h1>
+    <p>Оперативный вызов электрика на дом без посредников. Аккуратный электромонтаж, поиск скрытых неисправностей и гарантия на все виды работ.</p>
+    <div class="hero-btns">
+      <a href="tel:+79133697949" class="btn">📞 Позвонить: +7 (913) 369-79-49</a>
+      <a href="#price" class="btn-ghost">Смотреть прайс-лист</a>
+    </div>
   </header>
 
   <div class="container">
-    <h2>Основные направления работ</h2>
-    <div class="grid">
-      <div class="card"><div><h3>Розетки и выключатели</h3><p>Установка, перенос и замена розеток, выключателей, диммеров и силовых разъемов под плиту.</p></div><span class="price">от 250 ₽</span></div>
-      <div class="card"><div><h3>Освещение и подсветка</h3><p>Монтаж люстр, бра, точечных светильников, светодиодных лент и уличных прожекторов.</p></div><span class="price">от 400 ₽</span></div>
-      <div class="card"><div><h3>Электрощиты и автоматика</h3><p>Сборка и переборка распределительных щитов, замена автоматов, установка УЗО и реле напряжения.</p></div><span class="price">от 1 500 ₽</span></div>
-      <div class="card"><div><h3>Замена проводки под ключ</h3><p>Полный или частичный электромонтаж в квартирах, частных домах, гаражах и коммерческих помещениях.</p></div><span class="price">от 25 000 ₽</span></div>
-      <div class="card"><div><h3>Аварийный выезд</h3><p>Поиск обрыва кабеля, устранение короткого замыкания, восстановление питания после перегрузки сети.</p></div><span class="price">от 1 200 ₽</span></div>
-      <div class="card"><div><h3>Подключение техники</h3><p>Подключение варочных панелей, духовых шкафов, водонагревателей, вытяжек и стиральных машин.</p></div><span class="price">от 800 ₽</span></div>
+    <div class="section-title" id="services">
+      <h2>Основные направления работ</h2>
+      <p>Выполняю как мелкий бытовой ремонт, так и полный электромонтаж под ключ</p>
     </div>
 
-    <div class="box">
-      <h2>Прайс-лист на популярные услуги</h2>
+    <div class="grid">
+      <div class="card"><div><div class="card-icon">🔌</div><h3>Розетки и выключатели</h3><p>Установка, перенос и замена розеток, выключателей, диммеров, ТВ/интернет-розеток и силовых разъемов под плиту.</p></div><div class="card-footer"><span class="price">от 250 ₽</span></div></div>
+      <div class="card"><div><div class="card-icon">💡</div><h3>Освещение и подсветка</h3><p>Монтаж люстр, бра, точечных и трековых светильников, светодиодных лент и уличных прожекторов.</p></div><div class="card-footer"><span class="price">от 400 ₽</span></div></div>
+      <div class="card"><div><div class="card-icon">⚡</div><h3>Электрощиты и автоматика</h3><p>Сборка и переборка распределительных щитов, замена автоматов, установка УЗО, дифавтоматов и реле напряжения.</p></div><div class="card-footer"><span class="price">от 1 500 ₽</span></div></div>
+      <div class="card"><div><div class="card-icon">🏠</div><h3>Замена проводки под ключ</h3><p>Полный или частичный электромонтаж в квартирах, частных домах, коттеджах, гаражах и коммерческих помещениях.</p></div><div class="card-footer"><span class="price">от 25 000 ₽</span></div></div>
+      <div class="card"><div><div class="card-icon">🚨</div><h3>Аварийный выезд на дом</h3><p>Срочный поиск обрыва кабеля, устранение короткого замыкания, восстановление питания после перегрузки сети.</p></div><div class="card-footer"><span class="price">от 1 200 ₽</span></div></div>
+      <div class="card"><div><div class="card-icon">🍳</div><h3>Подключение техники</h3><p>Подключение варочных панелей, духовых шкафов, водонагревателей, вытяжек и стиральных машин.</p></div><div class="card-footer"><span class="price">от 800 ₽</span></div></div>
+    </div>
+
+    <div class="section-title" id="steps">
+      <h2>Как строится работа</h2>
+      <p>Понятный порядок без скрытых наценок и затягивания сроков</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><h4>Звонок или сообщение</h4><p>Вы описываете задачу по телефону, в Telegram или MAX. Озвучиваю предварительную цену.</p></div>
+      <div class="step"><div class="step-num">2</div><h4>Выезд и осмотр</h4><p>Приезжаю в удобное время во все районы Барнаула. При заказе работ выезд бесплатный.</p></div>
+      <div class="step"><div class="step-num">3</div><h4>Аккуратный монтаж</h4><p>Выполняю работы профессиональным инструментом строго по нормам ПУЭ и убираю за собой.</p></div>
+      <div class="step"><div class="step-num">4</div><h4>Проверка и гарантия</h4><p>Тестируем работу всех линий и приборов под нагрузкой, после чего вы оплачиваете результат.</p></div>
+    </div>
+
+    <div class="box" id="price">
+      <div class="section-title" style="margin-bottom: 24px;">
+        <h2>Подробный прайс-лист (Барнаул)</h2>
+        <p>Средние расценки на основные электромонтажные работы</p>
+      </div>
       <table class="price-table">
         <thead><tr><th>Вид работ</th><th>Средняя цена</th></tr></thead>
         <tbody>
-          <tr><td>Выезд и диагностика неисправности (при заказе работ — бесплатно)</td><td>от 1 000 ₽</td></tr>
+          <tr><td>Вызов электрика на дом и диагностика (при заказе работ — бесплатно)</td><td>от 1 000 ₽</td></tr>
           <tr><td>Установка / замена розетки или выключателя в готовый подрозетник</td><td>от 250 ₽ / шт.</td></tr>
           <tr><td>Установка силовой розетки для электроплиты</td><td>от 800 ₽ / шт.</td></tr>
           <tr><td>Сверление подрозетника (гипсокартон / кирпич / бетон)</td><td>от 200 ₽ / шт.</td></tr>
@@ -84,23 +188,22 @@
       <p class="price-note">* Цены указаны ориентировочно по средним расценкам в Барнауле. Точная стоимость согласовывается до начала работ.</p>
     </div>
 
-    <div class="box benefits">
-      <h2>Почему обращаются ко мне</h2>
-      <ul>
-        <li>Работаю без посредников — честные цены</li>
-        <li>Профессиональный инструмент и пылесос</li>
-        <li>Помощь с закупкой качественных материалов</li>
-        <li>Соблюдение правил ПУЭ и пожарной безопасности</li>
-        <li>Выезд во все районы Барнаула и пригород</li>
-        <li>Гарантия на выполненный монтаж</li>
-      </ul>
+    <div class="section-title" id="faq">
+      <h2>Частые вопросы</h2>
+      <p>Ответы на популярные вопросы заказчиков</p>
+    </div>
+    <div class="faq-list">
+      <details><summary>Помогаете ли вы с закупкой материалов?</summary><p>Да, могу сам закупить качественный кабель (ГОСТ), автоматы и расходники в проверенных магазинах Барнаула и привезти с чеками, либо составить для вас точный список покупок.</p></details>
+      <details><summary>Выезжаете ли вы в пригород Барнаула?</summary><p>Да, выезжаю во все районы Барнаула, а также в Новоалтайск, Власиху, Южный, Фирсово, Лесной и ближайшие посёлки.</p></details>
+      <details><summary>Много ли пыли при штроблении стен?</summary><p>Для штробления и сверления подрозетников использую профессиональный инструмент со строительным пылесосом, поэтому количество пыли сведено к минимуму.</p></details>
+      <details><summary>Есть ли минимальная сумма заказа?</summary><p>Выезжаю даже на небольшие задачи — например, заменить одну розетку, повесить люстру или найти причину, почему выбивает автомат.</p></details>
     </div>
 
-    <div class="contacts">
-      <h2>Нужна консультация или выезд мастера?</h2>
-      <p>Звоните или пишите в мессенджеры — Роман сориентирует по стоимости и времени приезда.</p>
+    <div class="contacts" id="contacts">
+      <h2>Нужна консультация или вызов электрика на дом?</h2>
+      <p>Звоните или пишите в мессенджеры — Роман ответит на вопросы, сориентирует по стоимости и согласует удобное время приезда.</p>
       <div class="contact-links">
-        <a href="tel:+79133697949" class="btn">Позвонить</a>
+        <a href="tel:+79133697949" class="btn">📞 Позвонить</a>
         <a href="https://t.me" class="btn-outline" target="_blank">Написать в Telegram</a>
         <a href="https://max.ru" class="btn-outline" target="_blank">Написать в MAX</a>
       </div>
@@ -108,8 +211,13 @@
   </div>
 
   <footer>
-    <p>© 2026 Частный электрик Роман, г. Барнаул. Работаю ежедневно с 08:00 до 21:00.</p>
+    <p>© 2026 Услуги электрика в Барнауле — мастер Роман. Выезд на дом ежедневно с 08:00 до 21:00.</p>
   </footer>
+
+  <div class="mobile-bar">
+    <a href="tel:+79133697949" class="m-call">📞 Позвонить</a>
+    <a href="https://t.me" class="m-tg" target="_blank">Telegram</a>
+  </div>
 
 </body>
 </html>
