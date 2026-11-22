@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Политика обработки персональных данных и cookie — ИП Отмашкин Роман Олегович</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#080a0f">
+  <style>
+    :root {
+      --ink: #080a0f;
+      --ink-2: #0d1119;
+      --paper: #f5f4f1;
+      --paper-2: #fff;
+      --accent: #ffc300;
+      --accent-deep: #8a6a00;
+      --text: #10141b;
+      --muted: #5b6572;
+      --line: #dcd9d1;
+      --ease: cubic-bezier(.22, .61, .36, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--text);
+      line-height: 1.65;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: #8a6a00;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: var(--ink);
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 10, 15, .88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, .07);
+    }
+
+    .nav-inner {
+      max-width: 940px;
+      margin: 0 auto;
+      height: 68px;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      flex: 0 0 34px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(150deg, var(--accent), #ff8a00);
+      color: var(--ink);
+      border-radius: 3px;
+      box-shadow: 0 0 0 1px rgba(255, 195, 0, .35), 0 6px 20px -6px rgba(255, 195, 0, .6);
+    }
+
+    .brand-mark svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .brand-txt {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-txt b {
+      font-size: .95rem;
+      letter-spacing: .16em;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .brand-txt small {
+      font-size: .68rem;
+      letter-spacing: .22em;
+      color: #8b98a9;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .back-link {
+      color: #c3cbd6;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .88rem;
+      padding: 9px 14px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 3px;
+      transition: all .2s;
+      white-space: nowrap;
+    }
+
+    .back-link:hover {
+      color: var(--accent);
+      border-color: rgba(255, 195, 0, .5);
+    }
+
+    .container {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    .doc-head {
+      margin-bottom: 30px;
+    }
+
+    .doc-head .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      margin-bottom: 14px;
+    }
+
+    .doc-head .tag::before {
+      content: "";
+      width: 26px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: .85rem;
+      color: var(--muted);
+    }
+
+    .doc-card {
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 40px;
+      box-shadow: 0 24px 50px -34px rgba(8, 10, 15, .3);
+    }
+
+    .requisites-box {
+      background: #faf9f6;
+      border-left: 3px solid var(--accent);
+      border-radius: 3px;
+      padding: 18px 20px;
+      margin: 18px 0 6px;
+    }
+
+    .requisites-box p {
+      margin-bottom: 4px;
+      color: var(--text);
+      font-size: .93rem;
+    }
+
+    h2 {
+      font-size: 1.12rem;
+      font-weight: 800;
+      letter-spacing: -.01em;
+      margin: 34px 0 12px;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .3em;
+      bottom: .3em;
+      width: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    p,
+    li {
+      font-size: .95rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    footer {
+      background: var(--ink);
+      color: #626d7b;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: .84rem;
+      border-top: 3px solid var(--accent);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .doc-card {
+        padding: 26px 20px;
+      }
+
+      .container {
+        padding: 34px 16px 56px;
+      }
+
+      .brand-txt small {
+        display: none;
+      }
+
+      .back-link {
+        font-size: .8rem;
+        padding: 8px 11px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z" />
+          </svg>
+        </span>
+        <span class="brand-txt">
+          <b>Электромонтаж 22</b>
+          <small>Барнаул · для бизнеса</small>
+        </span>
+      </a>
+      <a href="index.html" class="back-link">← Вернуться на сайт</a>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="doc-head">
+      <span class="tag">Документы</span>
+      <h1>Политика обработки персональных данных и использования файлов cookie</h1>
+      <div class="meta">г. Барнаул • Действует в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О
+        персональных данных»</div>
+    </div>
+
+    <div class="doc-card">
+      <h2>1. Общие положения и оператор персональных данных</h2>
+      <p>Настоящая Политика определяет порядок обработки и защиты персональных данных пользователей сайта, оказывающего
+        услуги промышленного и коммерческого электромонтажа в г. Барнауле и Алтайском крае.</p>
+      <div class="requisites-box">
+        <p><strong>Оператор персональных данных:</strong> Индивидуальный предприниматель Отмашкин Роман Олегович</p>
+        <p><strong>ИНН:</strong> 226702324767 • <strong>ОГРНИП:</strong> 326220200078381</p>
+        <p><strong>Регион деятельности:</strong> Алтайский край, г. Барнаул</p>
+        <p><strong>Контактный телефон:</strong> <a href="tel:+79133697949">+7 (913) 369-79-49</a></p>
+      </div>
+
+      <h2>2. Какие данные мы обрабатываем</h2>
+      <ul>
+        <li>Фамилия, имя, отчество и должность контактного лица;</li>
+        <li>Контактный номер телефона;</li>
+        <li>Наименование организации, ИНН, тип и адрес объекта, сведения из технического задания;</li>
+        <li>Обезличенные технические данные (файлы cookie, IP-адрес, тип браузера, время посещения страниц).</li>
+      </ul>
+
+      <h2>3. Цели обработки персональных данных</h2>
+      <ul>
+        <li>Приём и обработка заявок на расчёт сметы и выезд инженера на объект;</li>
+        <li>Обратная связь с представителями юридических лиц, ИП и заказчиками;</li>
+        <li>Подготовка договоров подряда, счетов и закрывающих документов;</li>
+        <li>Обеспечение работоспособности сайта и улучшение качества обслуживания.</li>
+      </ul>
+
+      <h2>4. Правовые основания и согласие пользователя</h2>
+      <p>Обработка персональных данных осуществляется на основании добровольного согласия субъекта персональных данных,
+        выраженного путём проставления отметки в соответствующем чекбоксе при отправке формы на сайте (ст. 6 и ст. 9
+        Федерального закона № 152-ФЗ).</p>
+
+      <h2 id="cookies">5. Использование файлов cookie</h2>
+      <p>Сайт использует файлы cookie — небольшие текстовые файлы, сохраняемые в браузере пользователя. Они применяются
+        для запоминания выбора пользователя в окне уведомления о cookie и сбора обезличенной статистики посещаемости.
+      </p>
+      <p>Вы можете в любой момент ограничить или отключить сохранение файлов cookie в настройках используемого вами
+        браузера.</p>
+
+      <h2>6. Условия хранения, передачи и отзыва согласия</h2>
+      <p>Оператор принимает необходимые организационные и технические меры для защиты персональных данных от
+        неправомерного доступа. Персональные данные не передаются третьим лицам, за исключением случаев, прямо
+        предусмотренных законодательством РФ.</p>
+      <p>Срок хранения данных определяется достижением целей обработки либо моментом отзыва согласия пользователем. Для
+        уточнения, изменения или удаления своих данных вы можете обратиться по контактному телефону Оператора.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 ИП Отмашкин Роман Олегович • Промышленный электромонтаж в Барнауле • <a href="index.html">На главную</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
